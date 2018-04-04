@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="lwa4p" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+  <xacro:include filename="$(find schunk)/urdf/schunk_lwa4p.urdf.xacro" />
+  <xacro:include filename="$(find schunk)/urdf/pg70.urdf.xacro" />
+  <xacro:schunk_pg70 name="gripper" parent="arm_6_link" >
+  </xacro:schunk_pg70>
+</robot>

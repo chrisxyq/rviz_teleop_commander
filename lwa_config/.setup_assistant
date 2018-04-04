@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: schunk_canopen_driver
+    relative_path: urdf/lwa4p/arm.urdf.xacro
+  SRDF:
+    relative_path: config/arm.srdf
+  CONFIG:
+    author_name: abcd
+    author_email: abc@163.com
+    generated_timestamp: 1522688561
