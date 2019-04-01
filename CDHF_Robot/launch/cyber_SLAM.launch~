@@ -1,0 +1,27 @@
+<!--Prepared by Redsky Deng for CDHF
+roslaunch  CDHF_Robot  cyber_SLAM.launch
+rosrun hokuyo_node hokuyo_node
+rosrun map_server map_saver -f map
+rosrun tf view_frames
+-->
+<launch>  
+    <param name="/use_sim_time" value="false"/>  <!-- rosparam set use_sim_time true -->
+    <arg name="model" />  
+    <arg name="gui" default="False" />  
+    <param name="robot_description" textfile="$(find CDHF_Robot)/urdf/XGyroCar.urdf" />
+    <param name="use_gui" value="$(arg gui)"/>  
+    <node name="OFPS1" pkg="CDHF_Robot" type="OFPS1_X64" args="/dev/ttyUSB0"/><!--OFPS port name -->
+    <node name="OdomOFPS1" pkg="CDHF_Robot" type="OdomOFPS1_X64" />
+    <node name ="lidar" pkg="hokuyo_node" type="hokuyo_node" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>  
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />  
+    <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=scan odom_frame:=odom">
+    <!--<remap from="scan" to ="base_scan/scan"/>-->
+    </node>
+    <node name="NMotionCtrl" pkg="CDHF_Robot" type="NMotionCtrl_X64" args="/dev/ttyUSB1"/>
+    <node name="CyberToNMotion" pkg="CDHF_Robot" type="TestNMotion_X64" args="cyber"/>
+    <node name ="CyberJoyInfo" pkg="CDHF_Robot" type="CyberJoyInfo_X64" />
+    <node name ="CyberMapInfo" pkg="CDHF_Robot" type="CyberMapInfo_X64" /> 
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find CDHF_Robot)/rviz/urdf.rviz" />  
+</launch>

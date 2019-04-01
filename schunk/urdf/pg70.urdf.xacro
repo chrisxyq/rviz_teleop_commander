@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="chuanci" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:include filename="$(find schunk)/urdf/common.xacro" />
   <xacro:include filename="$(find schunk)/urdf/pg70.gazebo.xacro" />
@@ -20,12 +20,16 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://schunk/meshes/pg70.dae" />
+          <mesh filename="package://schunk/meshes/pg70_plus.stl "  />
+          <!--mesh filename="package://schunk/meshes/pg70_plus.stl " scale="0.001 0.001 0.001"/>
+          <mesh filename="package://schunk/meshes/pg70.dae" /-->
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://schunk/meshes/pg70.stl" />
+          <mesh filename="package://schunk/meshes/pg70_plus.stl "  />
+          <!--mesh filename="package://schunk/meshes/pg70_plus.stl " scale="0.001 0.001 0.001" />
+          <mesh filename="package://schunk/meshes/pg70.stl" /-->
         </geometry>
       </collision>
     </link>

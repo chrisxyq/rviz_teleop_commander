@@ -1,0 +1,11 @@
+---
+int32  s32ErrCode
+string strErrInfo
+uint8  u8BattOpen
+uint8  u8SwitchDown
+uint8  u8ChargerIn
+uint8  u8ChargeComp
+uint8  u8ChargeOverFlow
+uint8  u8ChargerOverVolt
+uint8  u8ChargerVoltLow
+uint8  u8ChargerOverFlow

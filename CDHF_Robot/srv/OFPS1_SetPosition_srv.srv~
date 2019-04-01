@@ -1,0 +1,6 @@
+---
+int32  s32ErrCode
+string strErrInfo
+float32  f32PositionX
+float32  f32PositionY
+float32  f32PositionTh

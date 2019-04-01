@@ -1,0 +1,8 @@
+#TCP MOTION VALID BIT
+bool bValid
+#Vel info
+int16 i16VelY
+int16 i16VelX
+int16 i16VelR
+int16 i16VelR2
+

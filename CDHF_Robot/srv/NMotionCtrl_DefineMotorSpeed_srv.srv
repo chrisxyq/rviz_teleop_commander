@@ -1,0 +1,8 @@
+int16  s16Wheel1
+int16  s16Wheel2
+int16  s16Wheel3
+int16  s16Wheel4
+----
+int32  s32ErrCode
+string strErrInfo
+uint8  u8SysErrStatus

@@ -1,0 +1,6 @@
+----
+int32  s32ErrCode
+string strErrInfo
+uint8  u8MotionStatus
+uint8  u8SysErrStatus
+

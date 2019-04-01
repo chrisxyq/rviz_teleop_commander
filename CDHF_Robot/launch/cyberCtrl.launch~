@@ -1,0 +1,11 @@
+<!--Prepared by Redsky Deng for CDHF
+roslaunch  CDHF_Robot  cyberCtrl.launch
+rosrun tf view_frames
+-->
+<launch>  
+    <param name="/use_sim_time" value="false"/>  <!-- rosparam set use_sim_time true -->
+    <node name="NMotionCtrl" pkg="CDHF_Robot" type="NMotionCtrl_X64" args="/dev/ttyUSB0"/>
+    <node name="TestNMotion" pkg="CDHF_Robot" type="TestNMotion_X64" args="cyber"/>
+    <node name ="CyberJoyInfo" pkg="CDHF_Robot" type="CyberJoyInfo_X64" />
+    <node name ="CyberMapInfo" pkg="CDHF_Robot" type="CyberMapInfo_X64" /> 
+</launch>

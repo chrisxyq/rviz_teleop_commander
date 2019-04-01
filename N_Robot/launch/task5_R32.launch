@@ -1,0 +1,10 @@
+<!--Prepared by Redsky Deng-->
+<launch>
+  <node name ="lidar" pkg="hokuyo_node" type="hokuyo_node" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find CDHF_Robot)/map/map.yaml" output="screen"/>
+  <!--node pkg="CDHF_Robot" type="LIML_R32" name="liml" output="screen"-->
+    <!--param name="odom_frame_id" value="odom" /-->
+    <!--param name="tf_publish_rate" value="10.0"/-->
+  <!--/node-->
+  <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find CDHF_Robot)/rviz/urdf.rviz" /-->  
+</launch>

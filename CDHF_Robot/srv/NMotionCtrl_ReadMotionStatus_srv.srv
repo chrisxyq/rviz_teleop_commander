@@ -1,0 +1,10 @@
+---
+int32  s32ErrCode
+string strErrInfo
+uint8  u8MotionStatus
+uint8  u8SysErrStatus
+uint8  u8MotorErrStatus
+uint8  u8MotionBufCnt
+uint8  u8CrtMotionBufAddr
+uint8  u8CmdBufCnt
+uint8  u8CrtCmdBufAddr

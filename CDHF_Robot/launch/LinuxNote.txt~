@@ -1,0 +1,9 @@
+//****put the user cdhf into group dialout to enable using the serial ports.
+sudo usermod -aG dialout cdhf
+//****enable using laser port
+sudo chmod a+rw /dev/ttyACM0
+//****check the ttyACM0
+ls -l /dev/ttyACM0
+//****
+
+

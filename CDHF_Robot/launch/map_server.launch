@@ -1,0 +1,7 @@
+<!--Prepared by Redsky Deng
+roslaunch  CDHF_Robot  map_server.launch
+-->
+<launch>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find CDHF_Robot)/maps/map.yaml" output="screen"/>
+</launch>
+

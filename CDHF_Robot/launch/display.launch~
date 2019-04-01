@@ -1,0 +1,10 @@
+<!--roslaunch CDHF_Robot display.launch model:="'rospack find CDHF_Robot'/urdf/smartcar.urdf" -->
+<launch>
+	<arg name="model" />
+	<arg name="gui" default="False" />
+	<param name="robot_description" textfile="$(arg model)" />
+	<param name="use_gui" value="$(arg gui)"/>
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find CDHF_Robot)/rviz/urdf.rviz" required="true" />
+</launch>

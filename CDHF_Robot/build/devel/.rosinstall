@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/dev/ros/N_Robot/build/devel/setup.sh

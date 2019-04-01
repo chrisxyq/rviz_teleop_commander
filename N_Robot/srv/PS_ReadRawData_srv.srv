@@ -1,0 +1,7 @@
+---
+int32  s32ErrCode
+string strErrInfo
+uint16  u16BattVolt
+uint16  u16BattCurr
+uint16  u16BattChargeCurr
+uint16  u16Temperture

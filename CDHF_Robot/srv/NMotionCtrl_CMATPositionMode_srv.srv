@@ -1,0 +1,9 @@
+int16  s16X
+int16  s16Y
+uint16 u16CycleR
+uint16 u16LinearVelocity
+int16  s16AngularVelocity
+----
+int32  s32ErrCode
+string strErrInfo
+uint8  u8SysErrStatus

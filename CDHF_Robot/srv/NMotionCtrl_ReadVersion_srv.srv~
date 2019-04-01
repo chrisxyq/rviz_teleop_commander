@@ -1,0 +1,6 @@
+---
+int32  s32ErrCode
+string strErrInfo
+uint16  u16HrdVer
+float32 f32SwVer
+

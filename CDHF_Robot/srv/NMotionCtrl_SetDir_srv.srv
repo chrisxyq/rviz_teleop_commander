@@ -1,0 +1,5 @@
+float32  f32Direction
+----
+int32  s32ErrCode
+string strErrInfo
+uint8  u8SysErrStatus

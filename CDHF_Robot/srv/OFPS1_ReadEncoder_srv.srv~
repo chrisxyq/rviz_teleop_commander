@@ -1,0 +1,6 @@
+---
+int32  s32ErrCode
+string strErrInfo
+float32  f32Encoder1
+float32  f32Encoder2
+float32  f32Encoder3

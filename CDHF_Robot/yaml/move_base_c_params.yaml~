@@ -1,0 +1,19 @@
+controller_frequency: 9
+max_vel_x: 0.4
+min_vel_x: 0.01
+max_rotational_vel: 0.3
+
+acc_lim_theta:  3.2
+acc_lim_x:      2.5
+acc_lim_y:      2.5
+
+holonomic_robot: false 
+  
+const_vel_stn:  0.25
+const_vel_stn2: 0.01
+const_acc_stn:  0.04
+const_acc_stn2: 0.05
+territory:      0.4
+territory2:     0.1
+angle_tolerance: 0.1
+  

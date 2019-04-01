@@ -37,6 +37,7 @@ add_definitions(-DQT_NO_KEYWORDS)
 ## Qt's meta-object compiler.
 qt4_wrap_cpp(MOC_FILES
   src/teleop_pad.h
+  ##src/extern.h
 )
 
 ## Here we specify the list of source files, including the output of

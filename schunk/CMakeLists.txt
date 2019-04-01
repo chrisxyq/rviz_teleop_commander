@@ -209,24 +209,24 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(random src/random.cpp)
+add_executable(random src/basic/random.cpp)
 target_link_libraries(random ${catkin_LIBRARIES})
 add_dependencies(random schunk_gencpp)
 
-add_executable(custom src/custom.cpp)
+add_executable(custom src/basic/custom.cpp)
 target_link_libraries(custom ${catkin_LIBRARIES})
 add_dependencies(custom schunk_gencpp)
 
-add_executable(ceshi src/ceshi.cpp)
-target_link_libraries(ceshi ${catkin_LIBRARIES} ${ROS_LIBRARIES})
-add_dependencies(ceshi ${${PROJECT_NAME}_EXPORTED_TARGETS}
+add_executable(gripper src/basic/gripper.cpp)
+target_link_libraries(gripper ${catkin_LIBRARIES} ${ROS_LIBRARIES})
+add_dependencies(gripper ${${PROJECT_NAME}_EXPORTED_TARGETS}
 ${catkin_EXPORTED_TARGETS})
 
 
-add_executable(tranz
-  src/tranz.cpp
+add_executable(ddtz
+  src/ddtz.cpp
 )
-add_dependencies(tranz ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(tranz
+add_dependencies(ddtz ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ddtz
   ${catkin_LIBRARIES}
 )

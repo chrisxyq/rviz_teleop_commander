@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- send lwa urdf to param server -->
+      <param name="robot_description" command="rosrun xacro xacro --inorder '$(find schunk_canopen_driver)/urdf/arm.urdf.xacro'" />
+      <param name="robot_description2" textfile="$(find schunk)/urdf/chuanci.urdf" />      
+      <node name="rviz" pkg="rviz" type="rviz" args="-d $(find schunk)/config/chuanci.rviz" /> 
+
+      <!--node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+        <param name="use_gui" value="true"/>
+      </node>
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+        <param name="respawn" value="true" />
+        <param name="output" value="screen" />
+      </node-->
+</launch>
+
+
+

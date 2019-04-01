@@ -1,0 +1,20 @@
+<?xml version="1.0"?> 
+<launch>
+
+  <!-- Given the published joint states, publish tf for the robot links -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+
+  <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
+  <include file="$(find lwa_config)/launch/move_group_peixun.launch">
+    <arg name="publish_monitored_planning_scene" value="true"/>
+  </include>
+
+  <include file="$(find lwa_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+  <!-- Run Rviz and load the default config to see the state of the move_group node -->
+  <include file="$(find schunk)/launch/chuanci_rviz.launch">
+
+  </include>
+
+</launch>

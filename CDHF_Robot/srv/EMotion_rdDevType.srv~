@@ -1,0 +1,2 @@
+uint8 u8DevAddr
+uint8 u8DevType

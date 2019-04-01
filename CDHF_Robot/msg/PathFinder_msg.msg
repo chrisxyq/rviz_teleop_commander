@@ -1,0 +1,23 @@
+#Remote CTRLR VALID BIT
+bool bValid
+#JOY1
+int16 i16JOY1X
+int16 i16JOY1Y
+int16 i16JOY1Z
+#JOY2
+int16 i16JOY2X
+int16 i16JOY2Y
+#JOY3
+int16 i16JOY3X
+int16 i16JOY3Y
+#POT A/B
+uint16 u16POTA
+uint16 u16POTB
+#BAND A/B
+uint8 u8BAND
+#ENC A/B
+int8 i8ENCA
+int8 i8ENCB
+#TOG & BUTTON
+uint16 u16Button
+
