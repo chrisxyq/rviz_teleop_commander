@@ -1,9 +1,0 @@
-<!--SLAM by lidar,Prepared by Redsky Deng-->
-<launch>  
-    <param name="/use_sim_time" value="false"/>  <!-- rosparam set use_sim_time true -->
-    <node name ="lidar" pkg="hokuyo_node" type="hokuyo_node" />
-    <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=scan odom_frame:=odom">
-    <!--<remap from="scan" to ="base_scan/scan"/>-->
-    </node>
-    <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find CDHF_Robot)/rviz/urdf.rviz" /-->  
-</launch>

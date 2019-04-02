@@ -1,8 +1,0 @@
-<!--SLAM by 3D camera,Prepared by Redsky Deng-->
-<launch>  
-    <param name="/use_sim_time" value="false"/>  <!-- rosparam set use_sim_time true -->
-    <node name="Depth2Scan_R32" pkg="CDHF_Robot" type="Depth2Scan_R32"  /> 
-    <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=scan3D odom_frame:=odom">
-    <!--<remap from="scan" to ="base_scan/scan"/>-->
-    </node>
-</launch>
