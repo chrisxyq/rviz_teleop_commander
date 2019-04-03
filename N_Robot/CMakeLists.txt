@@ -168,10 +168,10 @@ add_dependencies(TestNMotion_X64 N_Robot)
 add_executable(OFPS1_X64 src/UART.cpp src/UARTDev.cpp src/UartOFPS1.cpp src/OFPS1.cpp src/Algorithm.cpp)
 target_link_libraries(OFPS1_X64 ${catkin_LIBRARIES})
 add_dependencies(OFPS1_X64 N_Robot)
-#OdomOFPS1
-add_executable(OdomOFPS1_X64 src/OdomOFPS1.cpp)
-target_link_libraries(OdomOFPS1_X64 ${catkin_LIBRARIES})
-add_dependencies(OdomOFPS1_X64 N_Robot)
+# #OdomOFPS1
+# add_executable(OdomOFPS1_X64 src/OdomOFPS1.cpp)
+# target_link_libraries(OdomOFPS1_X64 ${catkin_LIBRARIES})
+# add_dependencies(OdomOFPS1_X64 N_Robot)
 #PowerSource
 add_executable(PS1_X64 src/UART.cpp src/UARTDev.cpp src/UartPS.cpp src/PS1.cpp src/Algorithm.cpp)
 target_link_libraries(PS1_X64 ${catkin_LIBRARIES})
