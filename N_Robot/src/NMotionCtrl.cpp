@@ -678,13 +678,14 @@ int main(int argc,char **argv){
     ros::NodeHandle n;
     ROS_INFO("Chengdu Hangfa N serials robot motion node.v1.507");
     //** set uart parameter
+    //str.find("哦")==string::npos时则说明字符串str中不存在“哦”这个字符
     if(strPara1.find("/dev/tty")==string::npos){
         nMotionUart.pcPortName=UARTPORTNAME_NMOTIONCTRL;//USBcom use PL2303 chip
     }else{
         nMotionUart.pcPortName=argv[1];
     }
 
-    nMotionUart.nUartSpeed=38400;//9600
+    nMotionUart.nUartSpeed=115200;//9600
     nMotionUart.nUartFlowCtrl=0;
     nMotionUart.nUartDatabits=8;
     nMotionUart.nUartStopbits=1;

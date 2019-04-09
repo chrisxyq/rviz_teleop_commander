@@ -72,9 +72,9 @@ int UART0_Set(int fd,int speed,int flow_ctrl,int databits,int stopbits,int parit
 {
     unsigned int   i;
       //int   status;
-    int   speed_arr[] = { B38400, B19200, B9600, B4800, B2400, B1200, B300,
+    int   speed_arr[] = { B115200, B38400, B19200, B9600, B4800, B2400, B1200, B300,
           B38400, B19200, B9600, B4800, B2400, B1200, B300 };
-    int   name_arr[] = {38400,  19200,  9600,  4800,  2400,  1200,  300,    38400, 19200,  9600, 4800, 2400, 1200,  300 };
+    int   name_arr[] = {115200, 38400,  19200,  9600,  4800,  2400,  1200,  300,    38400, 19200,  9600, 4800, 2400, 1200,  300 };
 
     struct termios options;
 

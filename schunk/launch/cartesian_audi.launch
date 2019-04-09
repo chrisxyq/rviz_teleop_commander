@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-  <include file="$(find lwa_config)/launch/demo.launch"/>
-
-  <node name="cartesian_audi" pkg="schunk" type="cartesian_audi.py" respawn="false" output="screen">
-  </node>
-
-</launch>

@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-	<!-- send lwa urdf to param server -->
-    <param name="robot_description" command="rosrun xacro xacro --inorder '$(find schunk)/urdf/schunk_lwa4p.urdf.xacro'" />
-</launch>

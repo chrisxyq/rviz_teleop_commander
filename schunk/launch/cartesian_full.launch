@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-  <include file="$(find lwa4p_moveit_config)/launch/demo.launch"/>
-  <node name="cartesian_full" pkg="schunk" type="cartesian_full.py" respawn="false" output="screen">
-  </node>
-
-</launch>

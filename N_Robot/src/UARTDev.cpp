@@ -12,7 +12,7 @@ UARTDev::UARTDev(){
 #endif
     //
     pcPortName=NULL;
-    nUartSpeed=38400;
+    nUartSpeed=115200;
     nUartFlowCtrl=0;
     nUartDatabits=8;
     nUartStopbits=1;
